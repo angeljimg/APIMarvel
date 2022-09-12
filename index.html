@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarvelAPI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.2.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar is-fixed-top has-shadow is-flex-touch is-justify-content-space-between">
+            <div class="navbar-brand">
+              <a class="navbar-item" href="/">
+                <img src="marvel.png">
+              </a>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu is-flex">
+                <div class="navbar-end is-flex-touch is-justify-content-space-between">
+                    <div class="navbar-item">
+                        <form class="field has-addons" id="busqueda">
+                            <div class="control">
+                                <input autocomplete="off" id="buscar" class="input is-borderless is-rounded has-background-light" type="text" placeholder="Buscar...">
+                            </div>
+                            <div class="control">
+                                <button class="button is-rounded is-light">
+                                    <span class="icon is-left">
+                                        <i class="mdi mdi-magnify mdi-24px"></i>
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-black is-rounded"><span class="icon is-medium"><i class="mdi mdi-cart"></i></span><b class="is-size-7">0</b></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="section py-3">
+            <div class="container">
+             <h1 class="title mb-2">Conoce a tu personaje favorito</h1>
+             <p class="mb-5">Da click en tu personaje, para saber mas!</p>
+             <div id="results" class="columns is-multiline">
+                <!--card-->
+                
+             </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Marvel</strong> &copy; 2022 <span class="mx-2">&middot;</span> Todos los derechos reservados
+          </p>
+        </div>
+      </footer>
+      <script src="index.js"></script>
+      <script src="search.js"></script>
+</body>
+</html>
